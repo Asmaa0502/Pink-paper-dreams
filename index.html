@@ -3,57 +3,152 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pink Paper Dreams</title>
+  <title>My E-Commerce Website</title>
   <style>
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background-color: #ffe4e1;
-      color: #444;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    header {
+      background-color: #ff6f91;
+      color: white;
+      padding: 20px;
       text-align: center;
     }
-    header {
+
+    nav {
+      display: flex;
+      justify-content: center;
       background-color: #ffccd5;
-      padding: 20px;
+      padding: 10px 0;
     }
-    header h1 {
-      color: #ffffff;
-    }
+
     nav a {
-      text-decoration: none;
-      color: #ff6f91;
       margin: 0 15px;
+      text-decoration: none;
+      color: #444;
       font-weight: bold;
     }
-    .container {
-      padding: 20px;
+
+    nav a:hover {
+      color: #ff6f91;
     }
-    button {
+
+    .container {
+      max-width: 1200px;
+      margin: 20px auto;
+      padding: 20px;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .product {
+      text-align: center;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      padding: 15px;
+      margin: 10px;
+      flex: 1;
+      background-color: #ffe4e1;
+    }
+
+    .product img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 5px;
+    }
+
+    .product button {
+      padding: 10px 15px;
       background-color: #ff6f91;
-      color: #fff;
+      color: white;
       border: none;
-      padding: 10px 20px;
       border-radius: 5px;
       cursor: pointer;
     }
-    button:hover {
-      background-color: #e05670;
+
+    .product button:hover {
+      background-color: #ff4f6a;
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      margin-top: 20px;
+    }
+
+    .flex {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
     }
   </style>
 </head>
 <body>
+
+  <!-- Header -->
   <header>
-    <h1>Welcome to Pink Paper Dreams</h1>
-    <nav>
-      <a href="#">Home</a>
-      <a href="#">Shop</a>
-      <a href="#">Contact</a>
-    </nav>
+    <h1>Welcome to My Online Store</h1>
+    <p>Your one-stop shop for amazing products!</p>
   </header>
-  <div class="container">
-    <h2>Beautiful Pink Journals & E-Notes</h2>
-    <p>Explore our collection of aesthetic digital products designed for you!</p>
-    <button>Shop Now</button>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="#about">About Us</a>
+    <a href="#products">Products</a>
+    <a href="#contact">Contact Us</a>
+  </nav>
+
+  <!-- About Us Section -->
+  <div class="container" id="about">
+    <h2>About Us</h2>
+    <p>
+      Welcome to our online store! We are dedicated to bringing you the best products
+      at affordable prices. Shop with confidence and enjoy a seamless shopping experience.
+    </p>
   </div>
+
+  <!-- Products Section -->
+  <div class="container" id="products">
+    <h2>Our Products</h2>
+    <div class="flex">
+      <!-- Product 1 -->
+      <div class="product">
+        <img src="URL_TO_IMAGE_1" alt="Product 1">
+        <h3>Product 1</h3>
+        <p>Amazing product description goes here!</p>
+        <p>Price: $10</p>
+        <button>Buy Now</button>
+      </div>
+      <!-- Product 2 -->
+      <div class="product">
+        <img src="URL_TO_IMAGE_2" alt="Product 2">
+        <h3>Product 2</h3>
+        <p>This is another amazing product you’ll love!</p>
+        <p>Price: $15</p>
+        <button>Buy Now</button>
+      </div>
+      <!-- Add more products here -->
+    </div>
+  </div>
+
+  <!-- Contact Us Section -->
+  <div class="container" id="contact">
+    <h2>Contact Us</h2>
+    <p>If you have any questions, feel free to reach out to us at:</p>
+    <p>Email: support@Pinkpaperdreams.com</p>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 My Online Store. All Rights Reserved.</p>
+  </footer>
+
 </body>
 </html>
